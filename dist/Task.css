@@ -1,0 +1,222 @@
+.list-item{
+
+    display:flex;
+
+    width:100%;
+
+    height:3rem;
+
+    border-bottom:1px solid rgb(246, 246, 246);   
+
+    
+
+    align-items: center;
+
+    background-color: white;
+
+}
+
+.list-item:hover{
+
+    background-color: rgb(240, 255, 254);
+
+}
+
+.checkbox{
+
+    position: relative;
+
+    display:flex;
+
+    height:3rem;
+
+    justify-content: center;
+
+    align-items: center;
+
+    
+
+    width:44px;
+
+    padding-left: 2%;
+
+    padding-right: 2%;
+
+    
+
+    
+
+    
+
+}
+
+.checkbox input{
+
+    visibility: hidden;
+
+    
+
+    /* width:1.2em;
+
+    height:1.2em;
+
+    background: transparent;
+
+    box-shadow: #2cc5d2 0 0 0 1px inset;
+
+    cursor: pointer; */
+
+}
+
+.checkbox input[type="checkbox"] + span:before{
+
+    position: absolute;
+
+    top: 50%;
+
+    right: auto;
+
+    bottom: auto;
+
+    left: 50%;
+
+    width: 0.85em;
+
+    height: 0.85em;
+
+    transform: translate3d(-50%, -50%, 0);
+
+    background: transparent;
+
+    box-shadow: #2cc5d2 0 0 0 1px inset;
+
+    content: '';
+
+    display: block;
+
+    cursor: pointer;
+
+}
+
+@media (max-width:600px){
+
+    .checkbox input[type="checkbox"] + span:before{
+
+        width:0.6em;
+
+        height:0.6em;
+
+    }
+
+}
+
+.checkbox input[type="checkbox"]:checked + span:before {
+
+    font-size: 16px;
+
+    line-height: 24px;
+
+    box-shadow: none;
+
+    color: #2cc5d2;
+
+    margin-top: -1px;
+
+    font-style: normal;
+
+    font-weight: normal;
+
+    font-variant: normal;
+
+    text-transform: none;
+
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+
+    content:'\2713';
+
+  }
+
+
+
+.text{
+
+    height:3rem;
+
+    padding-left: 1%;
+
+    width:100%;
+
+    overflow: hidden;   
+
+    display:flex;
+
+    align-items: center;
+
+}
+
+.text input{
+
+    font-size: 18px;
+
+    background: transparent;
+
+    border:none;
+
+}
+
+@media (max-width:600px){
+
+    .text input{
+
+        font-size: 16px;
+
+    }
+
+}
+
+.actions{
+
+    padding-right: 2%;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.grey-star{
+
+    color:rgb(216, 216, 216);
+
+    
+
+}
+
+.blue-star{
+
+    color:#2cc5d2;
+
+    
+
+    
+
+}
+
+@media (max-width:600px){
+
+    .actions img{
+
+        width:15px;
+
+        height:15px;
+
+    }
+
+}
+

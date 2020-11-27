@@ -1,0 +1,87 @@
+.alertbox_container{
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    
+}
+.alertbox{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    align-items: center;
+    width:40vw;
+    /* height: 25vh; */
+    /* right:auto;
+    bottom: auto; */
+    overflow: hidden;
+    background-color: #51bafb;
+    border:2px solid  #069dfb;
+    border-radius: 24px;
+}
+@media (max-width:800px){
+    .alertbox{
+        width:70vw;
+    }
+}
+.alertbox .alertbox-textarea{
+    
+    
+    width:90%;
+    
+    /* overflow: hidden; */
+}
+.alertbox span{
+    font-weight: 700;
+    color:white;
+    font-size: 18px;
+    padding-left: 3%;
+    
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    
+}
+@media (max-width:800px){
+    .alertbox span,
+    .alertbox input
+    {
+        font-size: 16px;
+    }
+    
+}
+.alertbox label{
+    
+    height:2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.alertbox-textarea input[type="text"]{
+    
+    
+    padding-left: 5%;
+    font-size: 18px;
+    border-radius:20px;
+    border:1px solid #069dfb;
+    height: 100%;
+    outline: none;
+}
+
+.alertbox .alertbox-btn{
+    
+    margin:2% 5% 0% 5%;
+    text-align: center;
+    width:100%;
+}

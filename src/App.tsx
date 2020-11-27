@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+import Button from './components/button'
+import './App.css';
+import SingleInputAlertBox from './components/alertBox'
+import Taskbox from './components/taskbox/index'
+
+
+const initialData={
+  values:[
+    "one","two",'three','four',"one","two",'three','four',"one","two",'three','four',"one","two",'three','four'
+  ]
+}
 function App() {
+  
+  const [showAlert,setShowAlert]=React.useState(false)
+  const [taskName,setTaskName]=React.useState<string[]>([])
+  
+  function addTask(taskName:string){
+    setTaskName([taskName])
+    setShowAlert(false)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Taskbox values={taskName}/>
+      
+      <Button btn_text={"Add"} onClick={()=>setShowAlert(true)}/>
+      {showAlert&&
+        <SingleInputAlertBox input_title={"Add Task Name"} addTask={addTask}/>
+      }
     </div>
   );
 }

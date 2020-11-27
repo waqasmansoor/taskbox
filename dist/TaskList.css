@@ -1,0 +1,163 @@
+@keyframes glow{
+
+    0%,
+
+  100% {
+
+    opacity: 1;
+
+  }
+
+  50% {
+
+    opacity: 0.5;
+
+  }
+
+}
+
+.loading-row{
+
+    display:flex;
+
+    /* justify-content: space-around; */
+
+    align-items: center;
+
+    background-color: white;
+
+    cursor: progress;
+
+    height:3rem;
+
+    border-bottom:1px solid rgb(246, 246, 246);   
+
+    
+
+}
+
+
+
+.glow-checkbox{
+
+    animation: glow 1.5s ease-in-out infinite;
+
+    width:12px;
+
+    height:12px;
+
+    /* border:1px solid black; */
+
+    cursor: progress;
+
+    background: #eeeeee;
+
+    color:transparent;
+
+    margin: 0 16px 0 16px;
+
+}
+
+.glow-text{
+
+    animation: glow 1.5s ease-in-out infinite;
+
+    color: transparent;
+
+}
+
+.glow-text span{
+
+
+
+    background: #eeeeee;
+
+    margin-right: 8px;
+
+    font-size: 18px;
+
+    padding: 0 20px 0 20px;
+
+    letter-spacing: 3px;
+
+}
+
+.glow-star{
+
+    animation: glow 1.5s ease-in-out infinite;
+
+    margin-left: auto;
+
+    padding-right: 2%;
+
+    color:rgb(216, 216, 216);
+
+    font-size:24px;
+
+}
+
+.empty-box-container{
+
+    display:flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100%;
+
+    
+
+}
+
+.empty-box{
+
+    
+
+    width: 100%;
+
+    
+
+    transform: translate3d(0, -50%, 0);
+
+    text-align: center;
+
+    
+
+    
+
+}
+
+.box-checkmark{
+
+    font-size: 72px;
+
+    color: #2cc5d2;
+
+    
+
+}
+
+.box-title{
+
+    font-size: 16px;
+
+    line-height: 24px;
+
+    font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-weight: 800;
+
+    color: #555;
+
+}
+
+.box-subtitle{
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    color: #666;
+
+}
