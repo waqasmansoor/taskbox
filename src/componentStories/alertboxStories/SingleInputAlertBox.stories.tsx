@@ -1,5 +1,5 @@
 import React from 'react'
-import SingleInputAlertBox from '../components/alertBox/SingleInputAlertBox'
+import SingleInputAlertBox from '../../components/alertBox'
 
 export default {
     title:"SingleInputAlertBox",
