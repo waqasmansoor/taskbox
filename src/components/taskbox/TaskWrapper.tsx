@@ -14,10 +14,10 @@ const TaskWrapper: React.FC<{ taskData: task[] }> = ({ taskData }) => {
 
     useEffect(() => {
         if (taskData.length > 0) {
-            setTasks([
-                ...tasks,
+            setTasks(t=>([
+                ...t,
                 ...taskData
-            ])
+            ]))
         }
         
         

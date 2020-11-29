@@ -6,11 +6,11 @@ import SingleInputAlertBox from './components/alertBox'
 import Taskbox from './components/taskbox/index'
 
 
-const initialData={
-  values:[
-    "one","two",'three','four',"one","two",'three','four',"one","two",'three','four',"one","two",'three','four'
-  ]
-}
+// const initialData={
+//   values:[
+//     "one","two",'three','four',"one","two",'three','four',"one","two",'three','four',"one","two",'three','four'
+//   ]
+// }
 function App() {
   
   const [showAlert,setShowAlert]=React.useState(false)
